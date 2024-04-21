@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Help Instance"
+                 start-page="Starter.md">
+
+    <toc-element topic="Starter.md"/>
+    <toc-element topic="Virtualizador.md"/>
+    <toc-element topic="MaquinasVirtuales.md"/>
+    <toc-element topic="Servicios.md"/>
+    <toc-element topic="Requerimientos.md"/>
+    <toc-element topic="ProcesoElaboracionProyecto.md"/>
+    <toc-element topic="EvidenciasFuncionamiento.md"/>
+    <toc-element topic="Conclusiones.md"/>
+    <toc-element topic="Recomendaciones.md"/>
+</instance-profile>
