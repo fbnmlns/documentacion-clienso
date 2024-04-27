@@ -8,13 +8,15 @@ La empresa ha solicitado que el producto cumpla con los siguientes requerimiento
 2. Los usuarios no deberán poder copiar archivos de tipo .MP3 y .AVI a las carpetas de la empresa.
 3. Los usuarios deberán tener el mismo fondo de pantalla que la empresa ha definido.
 4. Los usuarios que no pertenecen al departamento de TI deberán tener restringido el acceso al panel de control.
-5. La página inicial de Internet Explorer deberá ser el sitio web creado para la empresa.
-6. Los usuarios deberán tener deshabilitado la ejecución de los ejecutables notepad.exe y regedit.exe.
-7. Los usuarios deberán tener mapeada la unidad P: para uso personal.
-8. Los usuarios deberán acceder a su carpeta personal mediante una ruta DFS.
-9. El usuario administrador local deberá nombrado como “usrmda”.
-10. El usuario invitado local deberá ser nombrado como “usrtmp”.
-11. El usuario administrador no deberá tener la necesidad de intervenir para implementar las funcionalidades.
+5. Los usuarios deberán tener acceso al sitio web de la empresa.
+6. La página inicial de Internet Explorer deberá ser el sitio web de la empresa.
+7. Los usuarios deberán tener deshabilitado la ejecución de los ejecutables notepad.exe y regedit.exe.
+8. Los usuarios deberán tener mapeada la unidad P: para uso personal.
+9. Los usuarios deberán acceder a su carpeta personal mediante una ruta DFS.
+10. El usuario administrador local deberá ser nombrado como “usrmda”.
+11. El usuario invitado local deberá ser nombrado como “usrtmp”.
+12. El usuario administrador no deberá tener la necesidad de intervenir en el cliente para implementar las funcionalidades.
+13. El contenido dentro de la carpeta “Documentos” de cada usuario deberá dirigirse a una carpeta localizada en el servidor.
 
 ## Desglose del Trabajo
 
