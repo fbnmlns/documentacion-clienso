@@ -4,9 +4,9 @@
 
 <instance-profile id="hi"
                  name="Grupo 1"
-                 start-page="Starter.md">
+                 start-page="Introduccion.md">
 
-    <toc-element topic="Starter.md"/>
+    <toc-element topic="Introduccion.md"/>
     <toc-element topic="Virtualizador.md"/>
     <toc-element topic="MaquinasVirtuales.md"/>
     <toc-element topic="Servicios.md"/>
