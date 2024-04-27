@@ -11,7 +11,7 @@ permissions:
 
 env:
   INSTANCE: 'Writerside/hi'
-  ARTIFACT: 'webHelpG12-all.zip'
+  ARTIFACT: 'webGrupoHI2-all.zip'
   DOCKER_VERSION: '233.14938'
 
 jobs:
