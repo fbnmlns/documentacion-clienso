@@ -1,6 +1,6 @@
 # Servicios de Infraestructura
 
-## Autenticación centralizada (Active Directory)
+## Autenticación Centralizada (Active Directory)
 
 Active Directory (AD) es un servicio de directorio diseñado para entornos Windows Server que permite gestionar y
 organizar recursos de red, tales como archivos, usuarios, grupos y dispositivos. Funciona como una base de datos
@@ -100,7 +100,7 @@ Windows Server 2019 incluye una función de servidor DHCP, que es opcional y pue
 asignar direcciones IP y otros parámetros a los clientes DHCP. Todos los sistemas operativos cliente de Windows vienen
 con un cliente DHCP incorporado, que está habilitado por defecto y forma parte de la implementación de TCP/IP.
 
-### Ventajas de utilizar DHCP
+### Ventajas de Utilizar DHCP
 
 DHCP ofrece varias ventajas:
 
@@ -164,7 +164,7 @@ Para el proyecto, DHCP ha sido configurado desde PowerShell de la siguiente mane
     </code-block>
 </procedure>
 
-## Carpetas compartidas desde el servidor
+## Carpetas Compartidas Desde el Servidor
 
 Un sistema de archivos proporciona diversas funciones para organizar y recuperar archivos en dispositivos de
 almacenamiento. Permite estructurar los archivos en una jerarquía y controla su formato y nombres. Los sistemas de
@@ -176,7 +176,7 @@ En el sistema operativo Windows, todos los sistemas de archivos tienen tres comp
 - **Directorios**: Colecciones jerárquicas de directorios y archivos.
 - **Volúmenes**: Agrupaciones de directorios y archivos.
 
-### Servidor de archivos
+### Servidor de Archivos
 
 Un servidor de archivos es una computadora encargada del almacenamiento y gestión de archivos de datos para que otras
 computadoras en la misma red puedan acceder a los archivos. Permite a los usuarios compartir información a través de una
@@ -197,7 +197,7 @@ sesión o reglas de política de grupo.
 >
 {style="note"}
 
-### Grupos de seguridad
+### Grupos de Seguridad
 
 En Active Directory, hay dos tipos principales de entidades de seguridad: cuentas de usuario y cuentas de equipo. Estas
 cuentas representan personas individuales o equipos dentro de una red. Además, una cuenta de usuario puede ser utilizada
@@ -211,7 +211,7 @@ políticas de seguridad pueden aplicarse a todo el grupo en lugar de individualm
 >
 {style="note"}
 
-## Administrador de recursos del servidor de archivos (File Server Resource Manager)
+## Administrador de Recursos del Servidor de Archivos (File Server Resource Manager)
 
 El Administrador de Recursos del Servidor de Archivos (FSRM) es una herramienta de Windows Server que permite a los
 administradores organizar y gestionar eficientemente los archivos almacenados en servidores de archivos. Con FSRM, se
@@ -242,14 +242,14 @@ el orden y la eficiencia en el entorno de red.
   datos.
   También permiten monitorear grupos de usuarios para detectar intentos de guardar archivos no autorizados.
 
-## Políticas de grupo
+## Políticas de Grupo
 
 Las Directivas de Grupo se utilizan para regular las configuraciones de usuarios y equipos dentro de los dominios de
 Active Directory (AD) de Windows. Es un enfoque basado en políticas que puede aplicarse a toda la organización o de
 manera selectiva a ciertos departamentos o grupos dentro de las organizaciones. Las Directivas de Grupo son
 implementadas mediante Objetos de Directiva de Grupo (GPO, por sus siglas en inglés).
 
-### Objetos de políticas de grupo
+### Objetos de Políticas de Grupo
 
 Los GPO comprenden las configuraciones de usuario y equipo que se aplicarán a dominios o unidades organizativas (OU).
 Los GPO deben estar vinculados a una unidad de AD (dominio o OU) para ser aplicables. Tanto las políticas de
@@ -259,8 +259,117 @@ políticas de bloqueo de cuentas, restricciones de software y configuraciones de
 se utilizan para regular el acceso al Panel de Control, configuraciones del sistema y recursos de red.
 
 - **Configuración de equipo**: Estas políticas se aplican al equipo local y no cambian por usuario.
-- **Configuración de usuario**: Estas políticas se le aplican al usuario que ha iniciado sesión y controlan su sesión.
+- **Configuración de usuario**: Estas políticas se aplican al usuario que ha iniciado sesión para controlar su sesión.
 
-• Web server utilizando http y https
-• Certificate Authority (CA) para certificado de la página web
-• Folder redirection del directorio “Mis Documentos” del perfil del usuario en las estaciones.
+## DFS Namespace
+
+Los Espacios de Nombres DFS (Distributed File System) son una función de Windows Server que facilita la organización de
+carpetas compartidas ubicadas en diferentes servidores en una estructura lógica unificada. Esto proporciona a los
+usuarios una vista consolidada de estas carpetas compartidas, donde una única ruta de acceso conduce a archivos
+dispersos en varios servidores, como se ilustra en el siguiente diagrama:
+
+![DFS diagram](dfs-overview.png){ border-effect="line" thumbnail="true" width="350"}
+
+### Descripción de los elementos que componen un Espacio de Nombres de DFS
+
+- **Servidor de espacio de nombres**: Un servidor de espacio de nombres aloja y gestiona una colección de carpetas
+  compartidas, siendo capaz de ser tanto un
+  servidor miembro como un controlador de dominio.
+
+- **Raíz del espacio de nombres**: La raíz del espacio de nombres marca el punto de partida de esta estructura, como se
+  muestra en la figura anterior con
+  el nombre "Public" y la ruta de acceso "\Contoso\Public". Este tipo de espacio de nombres, conocido como basado en
+  dominio, se inicia con el nombre de un dominio (por ejemplo, Contoso) y sus detalles se almacenan en Active Directory
+  Domain Services (AD DS). Aunque se ilustre un solo servidor de espacio de nombres, un espacio de nombres basado en
+  dominio puede estar distribuido en varios servidores para mejorar su disponibilidad.
+
+- **Carpetas**: Las carpetas agregan organización y jerarquía al espacio de nombres, con algunas conteniendo destinos de
+  carpeta reales
+  para los usuarios. Al explorar una carpeta con destinos de carpeta, el equipo cliente es redirigido transparentemente
+  a uno de esos destinos.
+
+- **Destinos de carpeta**: Los destinos de carpeta representan las ubicaciones físicas de las carpetas compartidas o de
+  otros espacios de nombres
+  asociados con una carpeta en el espacio de nombres principal. Estos destinos albergan los datos y el contenido. Por
+  ejemplo, una carpeta llamada "Herramientas" puede tener destinos en Londres y Nueva York, y otra carpeta llamada "
+  Guías de Entrenamiento" puede tener un solo destino en Nueva York. Cuando los usuarios acceden a "
+  \Contoso\Public\Software\Herramientas", son redirigidos automáticamente a la carpeta compartida correspondiente en el
+  servidor más cercano, ya sea en Londres o Nueva York, dependiendo de su ubicación.
+
+> Un servidor que hospeda espacios de nombres basados en dominios debe contener un volumen NTFS para hospedar el espacio
+> de nombres.
+>
+{style="note"}
+
+## Servidor Web IIS
+
+Internet Information Services, también conocido como IIS, es un servidor web de Microsoft que se ejecuta en el sistema
+operativo Windows y se utiliza para intercambiar contenido web estático y dinámico con los usuarios de Internet. IIS
+puede usarse para alojar, implementar y gestionar aplicaciones web utilizando tecnologías como ASP.NET y PHP.
+
+### Beneficios de IIS
+
+- **Seguridad robusta**: IIS viene con características integradas de autenticación, autorización y control de acceso
+  para
+  fortalecer la seguridad de las aplicaciones web. Se pueden crear cuentas de administrador de sistema y de aplicación
+  de manera individual para un acceso a nivel granular. Otras características de seguridad incluyen filtrado de
+  solicitudes
+  para permitir o bloquear tráfico, bloqueo dinámico de IP, encriptación SSL y TLS, compresión de páginas web y
+  controles de seguridad específicos para FTP.
+
+- **Pools de aplicaciones**: Esto ayuda a separar las aplicaciones web en IIS para una mejor seguridad y disponibilidad.
+  Un
+  pool de aplicaciones tiene una o varias aplicaciones gestionadas por uno o más procesos de trabajo en IIS. Un proceso
+  de
+  trabajo maneja las solicitudes de cliente específicas de un pool de aplicaciones. El aislamiento asegura que el fallo
+  de
+  una aplicación en un pool particular no afecte a las aplicaciones en otros pools.
+
+- **Escalabilidad y confiabilidad**: Se puede implementar una infraestructura web escalable y confiable con la Granja
+  Web de
+  IIS, que permite alojar sitios web de alto tráfico en múltiples servidores IIS con equilibrio de carga y enrutamiento
+  de
+  solicitudes de aplicación (ARR). Un balanceador de carga distribuye el tráfico entre múltiples servidores en la granja
+  de servidores IIS utilizando algoritmos sofisticados. Al mismo tiempo, ARR determina el mejor servidor de contenido
+  para
+  cada solicitud. Una granja de servidores IIS también permite agregar o eliminar servidores para escalar dinámicamente
+  las capacidades de manejo de tráfico del sitio web.
+
+## Certificate Authority (CA)
+
+Un Certificado de Autoridad (CA) es una entidad que distribuye certificados digitales a dispositivos. Ayudan a validar
+las identidades de sitios web, individuos y dispositivos antes de administrarles certificados digitales.
+
+En un sistema de infraestructura de clave pública (PKI), el cliente genera un par de claves pública-privada. La clave
+pública y la información del usuario final se envían al CA. Luego, el CA crea un certificado digital que consiste en la
+clave pública del usuario y atributos del certificado que verifican que la información es correcta. El certificado está
+firmado por el CA con su clave privada, lo que solidifica la legitimidad del certificado.
+
+Un Certificado de Autoridad puede ser:
+
+- Una organización que garantiza la identidad de un usuario final.
+- Un servidor utilizado por la organización para emitir y gestionar certificados.
+
+## Folder Redirection
+
+Permite a los usuarios y administradores redirigir la ruta de una carpeta conocida a una nueva ubicación, ya sea
+manualmente o mediante el uso de Directiva de Grupo. La nueva ubicación puede ser una carpeta en el equipo local o un
+directorio en una compartición de archivos. Los usuarios interactúan con los archivos en la carpeta redirigida como si
+aún existieran en la unidad local. Por ejemplo, se puede redirigir la carpeta Documentos, que normalmente se almacena en
+una unidad local, a una ubicación de red. Los archivos en la carpeta están entonces disponibles para el usuario desde
+cualquier equipo en la red.
+
+### Lista de Carpetas que Pueden Ser Redirigidas
+- AppData/Roaming
+- Contactos
+- Escritorio
+- Documentos
+- Descargas
+- Favoritos
+- Vínculos
+- Música
+- Imágenes
+- Juegos guardados
+- Búsquedas
+- Menú Inicio
+- Videos
