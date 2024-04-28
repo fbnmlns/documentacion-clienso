@@ -5,7 +5,8 @@ completamente separada dentro de una ventana de aplicación en un escritorio. Se
 para adaptarse a diferentes necesidades de potencia de procesamiento, ejecutar software que requiera un sistema
 operativo diferente o probar aplicaciones en un entorno seguro y aislado.
 
-A lo largo de la historia, las máquinas virtuales se han utilizado para la virtualización de servidores, lo que permite a los
+A lo largo de la historia, las máquinas virtuales se han utilizado para la virtualización de servidores, lo que permite
+a los
 equipos de TI consolidar sus recursos informáticos y mejorar la eficiencia. Además, las máquinas virtuales pueden
 realizar tareas específicas consideradas demasiado riesgosas para llevar a cabo en un entorno de host, como acceder a
 datos infectados por virus o probar sistemas operativos. Dado que la máquina virtual está separada del resto del
@@ -47,8 +48,9 @@ productividad y la colaboración en el entorno empresarial.
 </procedure>
 
 Una vez con las imagenes descargadas, ingresar a VirtualBox y darle click al
-botón ![New virtual machine button](new_virtualmachine_button.png){width="32"} para crear una nueva máquina virtual. Ahí se debe
-seleccionar el archivo .ISO para el sistema operativo de la máquina que se desea crear, como se muestra en la imagen:
+botón ![New virtual machine button](new_virtualmachine_button.png){width="32"} para crear una nueva máquina virtual. Una
+vez ahí, seleccionar el archivo .ISO para definir el sistema operativo de la máquina que se desea crear, como se muestra
+en la imagen:
 
 ![VirtualBox Wizard](virtualmachine_creation.png){ border-effect="line" thumbnail="true" width="550" }
 
