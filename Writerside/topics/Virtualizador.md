@@ -28,10 +28,10 @@ usuarios y desarrolladores.
 
 Actualmente, existen dos versiones principales de VirtualBox:
 
-Oracle VM VirtualBox: Esta es la versión propietaria de Oracle, que ofrece una amplia gama de características y
+1. **Oracle VM VirtualBox**: Esta es la versión propietaria de Oracle, que ofrece una amplia gama de características y
 funcionalidades. Aunque es gratuita para uso personal y de evaluación, Oracle también ofrece versiones comerciales con
 características adicionales y soporte técnico.
-VirtualBox OSE: Esta es la versión de código abierto de VirtualBox, que está sujeta a la licencia GPLv2. Aunque puede
+2. **VirtualBox OSE**: Esta es la versión de código abierto de VirtualBox, que está sujeta a la licencia GPLv2. Aunque puede
 carecer de algunas características presentes en la versión propietaria, VirtualBox OSE sigue siendo una opción popular
 para aquellos que prefieren el software de código abierto y la transparencia en su desarrollo.
 
@@ -40,6 +40,7 @@ Innotek GmbH fue el creador original y el primer propietario de VirtualBox, desd
 En 2008, Sun Microsystems adquirió Innotek y asumió el desarrollo de VirtualBox.
 Oracle Corporation, posteriormente, adquirió Sun Microsystems en 2010, convirtiéndose en el actual propietario de
 VirtualBox.
+
 Con cada cambio de propietario, VirtualBox ha continuado evolucionando y mejorando, agregando nuevas funcionalidades y
 mejoras de rendimiento. Hoy en día, VirtualBox es una herramienta de virtualización ampliamente utilizada por individuos
 y empresas por igual, permitiendo la ejecución de múltiples sistemas operativos en un solo dispositivo físico. Además,
