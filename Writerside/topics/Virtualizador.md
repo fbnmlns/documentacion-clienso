@@ -109,7 +109,7 @@ A continuación, se destacan algunos aspectos que contribuyen a la usabilidad de
   recursos incluyen tutoriales, guías de usuario y foros comunitarios donde los usuarios pueden encontrar ayuda y
   solucionar problemas.
 
-### Consejos Adicionales Para Mejorar la Usabilidad de VirtualBox
+### Consejos Adicionales para Mejorar la Usabilidad de VirtualBox
 
 - **Familiarízarse con la interfaz**: Tomarse tiempo para explorar la interfaz de VirtualBox y familiarizarse con las
   diferentes opciones de menú y botones.

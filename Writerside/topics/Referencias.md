@@ -4,6 +4,10 @@
 
 [De MyWorkDrive, E. (2023, 13 octubre). Windows File Server. MiTrabajoDrive.](https://www.myworkdrive.com/es/file-server/windows/)
 
+[Documentation – Oracle VM VirtualBox. (s.f.).](https://www.virtualbox.org/wiki/Documentation)
+
+[Downloads – Oracle VM VirtualBox. (s. f.).](https://www.virtualbox.org/wiki/Downloads)
+
 [JasonGerend. (2023a, marzo 9). Protocolo de configuración dinámica de host (DHCP). Microsoft Learn.](https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top)
 
 [JasonGerend. (2023b, marzo 9). Protocolo de configuración dinámica de host (DHCP). Microsoft Learn.](https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top)
@@ -23,6 +27,8 @@
 [Raphaely, E. (2024, 13 marzo). What is a Microsoft Certificate Authority? SecureW2.](https://www.securew2.com/blog/microsoft-certificate-authority)
 
 [The Benefits & Flexibility of Windows Server. (s. f.). MyChoiceSoftware.com. ](https://www.mychoicesoftware.com/blogs/news/the-benefits-flexibility-of-windows-server#:~:text=Windows%20Server%20has%20a%20huge,tailor%20them%20to%20their%20needs)
+
+[virtualbox.org - Index page. (2024, 7 febrero).](https://forums.virtualbox.org)
 
 [What is a Virtual Machine? | VMware Glossary. (2024, 26 marzo). VMware.](https://www.vmware.com/topics/glossary/content/virtual-machine.html)
 
