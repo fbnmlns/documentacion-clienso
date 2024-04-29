@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi"
-                 name="Grupo 1"
+                 name="Documentación Final - Grupo 1"
                  start-page="Introduccion.md">
 
     <toc-element topic="Introduccion.md"/>
@@ -11,7 +11,7 @@
     <toc-element topic="MaquinasVirtuales.md"/>
     <toc-element topic="Servicios.md"/>
     <toc-element topic="ProcesoElaboracionProyecto.md"/>
-    <toc-element topic="EvidenciasFuncionamiento.md"/>
     <toc-element topic="Conclusiones.md"/>
     <toc-element topic="Recomendaciones.md"/>
+    <toc-element topic="Referencias.md"/>
 </instance-profile>

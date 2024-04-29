@@ -15,8 +15,10 @@ La empresa ha solicitado que el producto cumpla con los siguientes requerimiento
 9. Los usuarios deberán acceder a su carpeta personal mediante una ruta DFS.
 10. El usuario administrador local deberá ser nombrado como “usrmda”.
 11. El usuario invitado local deberá ser nombrado como “usrtmp”.
-12. El usuario administrador no deberá tener la necesidad de intervenir en el cliente para implementar las funcionalidades.
-13. El contenido dentro de la carpeta “Documentos” de cada usuario deberá dirigirse a una carpeta localizada en el servidor.
+12. El usuario administrador no deberá tener la necesidad de intervenir en el cliente para implementar las
+    funcionalidades.
+13. El contenido dentro de la carpeta “Documentos” de cada usuario deberá redirigirse a una carpeta de red localizada en el
+    servidor.
 
 ## Desglose del Trabajo
 
@@ -60,7 +62,7 @@ La empresa ha solicitado que el producto cumpla con los siguientes requerimiento
   <procedure title="Pruebas de funcionalidad">
     <step>Sitio web es seguro</step>
     <step>Sitio web es funcional</step>
-    <step>Carpetas compartidos con permisos y cuotas correctas</step>
+    <step>Carpetas compartidas con permisos y cuotas correctas</step>
     <step>Políticas de grupo funcionan debidamente y el administrador no interviene en el cliente</step>
   </procedure>
   <procedure title="Documentación">
@@ -137,3 +139,6 @@ La empresa ha solicitado que el producto cumpla con los siguientes requerimiento
 </table>
 
 ## Bitácora
+
+Se puede acceder a la bitácora que documenta todo el trabajo realizado para la elaboración del proyecto a través del
+siguiente link: [Bitácora del Grupo 1](https://drive.google.com/file/d/1emXU9Fq53S2bZ9O5C2FTT1rhXxcTINZ2/view?usp=drive_link)

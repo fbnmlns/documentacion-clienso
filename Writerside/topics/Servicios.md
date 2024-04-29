@@ -118,7 +118,7 @@ DHCP ofrece varias ventajas:
     - **Reenvío de mensajes DHCP a través de un agente de retransmisión**: Elimina la necesidad de tener un servidor
       DHCP en cada subred al reenviar los mensajes iniciales DHCP a través de un agente de retransmisión DHCP.
 
-### Configuración del DHCP Desde PowerShell
+### Configuración del DHCP desde PowerShell
 
 Para el proyecto, DHCP ha sido configurado desde PowerShell de la siguiente manera:
 
@@ -164,7 +164,7 @@ Para el proyecto, DHCP ha sido configurado desde PowerShell de la siguiente mane
     </code-block>
 </procedure>
 
-## Carpetas Compartidas Desde el Servidor
+## Carpetas Compartidas desde el Servidor
 
 Un sistema de archivos proporciona diversas funciones para organizar y recuperar archivos en dispositivos de
 almacenamiento. Permite estructurar los archivos en una jerarquía y controla su formato y nombres. Los sistemas de
@@ -270,7 +270,7 @@ dispersos en varios servidores, como se ilustra en el siguiente diagrama:
 
 ![DFS diagram](dfs-overview.png){ border-effect="line" thumbnail="true" width="350"}
 
-### Descripción de los elementos que componen un Espacio de Nombres de DFS
+### Descripción de los Elementos que Componen un Espacio de Nombres de DFS
 
 - **Servidor de espacio de nombres**: Un servidor de espacio de nombres aloja y gestiona una colección de carpetas
   compartidas, siendo capaz de ser tanto un
@@ -359,7 +359,7 @@ aún existieran en la unidad local. Por ejemplo, se puede redirigir la carpeta D
 una unidad local, a una ubicación de red. Los archivos en la carpeta están entonces disponibles para el usuario desde
 cualquier equipo en la red.
 
-### Lista de Carpetas que Pueden Ser Redirigidas
+### Lista de Carpetas que Pueden ser Redirigidas
 - AppData/Roaming
 - Contactos
 - Escritorio
