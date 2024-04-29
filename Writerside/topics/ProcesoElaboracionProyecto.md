@@ -17,7 +17,7 @@ La empresa ha solicitado que el producto cumpla con los siguientes requerimiento
 11. El usuario invitado local deberá ser nombrado como “usrtmp”.
 12. El usuario administrador no deberá tener la necesidad de intervenir en el cliente para implementar las
     funcionalidades.
-13. El contenido dentro de la carpeta “Documentos” de cada usuario deberá dirigirse a una carpeta localizada en el
+13. El contenido dentro de la carpeta “Documentos” de cada usuario deberá redirigirse a una carpeta de red localizada en el
     servidor.
 
 ## Desglose del Trabajo
